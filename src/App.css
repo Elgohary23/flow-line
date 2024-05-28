@@ -32,7 +32,228 @@
   from {
     transform: rotate(0deg);
   }
+
   to {
     transform: rotate(360deg);
   }
 }
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  padding: 5px;
+  padding-left: 10px;
+  background-color: #939497;
+  height: 50px;
+  align-items: center;
+  border-radius: 2px;
+  font-weight: bold;
+
+}
+
+.nav-list {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+}
+
+.brandname {
+  font-size: larger;
+  text-decoration: none;
+  color: #282c34;
+}
+
+.nav-list div {
+  cursor: pointer;
+}
+
+.about:hover,
+.contact:hover {
+  color: blue;
+  /* Change to the desired blue color */
+}
+
+.custom-container {
+  background-color: #d7d7d7;
+  height: 5000px;
+  width: 750px;
+  /* Adjust this for your desired base width */
+  padding: 15px;
+  margin: 0 auto;
+  /* Centers the container horizontally */
+  max-width: 970px;
+
+  /* Adjust for medium breakpoint */
+  @media (min-width: 992px) {
+    max-width: 1170px;
+    /* Adjust for large breakpoint */
+  }
+
+  @media (min-width: 1200px) {
+    max-width: 1320px;
+    /* Adjust for extra-large breakpoint */
+  }
+}
+
+
+
+.slider .projects,
+.slider .tasks {
+  padding: 5px;
+  border-radius: 5px;
+  cursor: pointer;
+  color: white;
+
+}
+
+.slider .current {
+  background-color: #001920;
+
+}
+
+.slider {
+  background-color: #282c34;
+  border-radius: 5px;
+  width: 141px;
+  padding: 0px;
+  margin-left: 30px;
+  font-size: 20px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.R {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+.new-element-titling {
+  margin-top: 10px;
+  border-radius: 5px;
+  padding: 5px;
+  width: 100%;
+  height: 50px;
+  border: 1px solid rgb(53, 53, 53);
+}
+
+.projects-UL {
+  list-style: none;
+  margin-top: 10px;
+  padding-left: 5px;
+}
+
+.project-Li {
+  padding: 7px;
+  margin: 5px;
+  font-size: larger;
+}
+
+.project-Li:hover {
+  background-color: #939497;
+  cursor: pointer;
+  padding-left: 5px;
+  margin-left: 4px;
+  font-size: xx-large;
+}
+
+
+/* tasks */
+
+.todo-list h1 {
+  text-align: center;
+  color: #343a40;
+  /* Dark gray text */
+}
+
+.input-container {
+  margin-bottom: 10px;
+}
+
+.input-container input {
+  width: calc(100% - 80px);
+  padding: 8px;
+  font-size: 16px;
+}
+
+.input-container button {
+  width: 80px;
+  padding: 8px;
+  font-size: 16px;
+  background-color: #007bff;
+  /* Blue button */
+  color: #fff;
+  border: none;
+  cursor: pointer;
+}
+
+.input-container button:hover {
+  background-color: #0056b3;
+}
+
+.todos {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+.inputTExt {
+  margin-top: 5px;
+
+}
+
+.todos li {
+  margin-bottom: 5px;
+  background-color: #f4f4f4;
+  padding: 8px;
+  border-radius: 3px;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+  display: flex;
+  align-items: center;
+}
+.task-text{
+  font-size: 19px;
+  margin-left: 5px;
+}
+
+/* Increase the size of the checkbox */
+.todos li input[type="checkbox"] {
+  width: 20px; /* Set width */
+  height: 20px; /* Set height */
+}
+.about-container {
+  padding: 20px;
+  text-align: center;
+  background-color: #f9f9f9;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  margin: 20px;
+}
+
+.about-container h1 {
+  font-size: 2em;
+  color: #333;
+}
+
+.about-container p {
+  font-size: 1.2em;
+  color: #666;
+}
+.contact-container {
+  padding: 20px;
+  text-align: center;
+  background-color: #f9f9f9;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  margin: 20px;
+}
+
+.contact-container h1 {
+  font-size: 2em;
+  color: #333;
+}
+
+.contact-container p {
+  font-size: 1.2em;
+  color: #666;
+}
+
+/* Optional: Adjust the appearance of the checkbox */
